@@ -6,9 +6,9 @@
 VectorsList = []
 points = []
 
-for x in range(3):
+for x in range(10):
   print(f"{x  + 1 } vector")
-  for y in range(3):
+  for y in range(10):
     points.append(int(input(f"Enter coordinates of place {y+1}")))
   VectorsList.append(points)
   points = []
@@ -31,17 +31,17 @@ Also save that positions index
 
 finalList = []
 
-for x in range(3):
+for x in range(10):
   print(f"{x  + 1 } vector")
   print(f"{VectorsList[x]}")
-  for y in range(3):
+  for y in range(10):
     if(y != x):
      for z in range(3):
        tempCal += VectorsList[x][z]*VectorsList[y][z]
   
     if(tempCal > max):
       max = tempCal
-      index = x+1
+      index = y
       tempCal = 0
   
   finalList.append([VectorsList[x], VectorsList[index]])
