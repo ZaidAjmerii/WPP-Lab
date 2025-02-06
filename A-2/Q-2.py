@@ -21,6 +21,7 @@ while x != 0:
   x = int(input(f"Enter 0 to quit and 1 to continue: "))
 
 while y != 0:
-  productName = input(f"Enter the product Name to find its price: ")
-  print(f"{productName}\'s price is {thisdict[productName]} ")
-  y = int(input(f"Enter 0 to quit and 1 to continue: "))
+  
+    productName = input(f"Enter the product Name to find its price: ")
+    print(f"{productName}\'s price is {thisdict[productName]} ")
+    y = int(input(f"Enter 0 to quit and 1 to continue: "))
